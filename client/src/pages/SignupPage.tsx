@@ -207,21 +207,21 @@ export default function SignupPage() {
       }}>
 
         {/* ── LEFT: Text on dark background (no box, no card) ── */}
-        <div style={        { flex: "1 1 auto", maxWidth: 520, marginRight: 0 }}>
+        <div style={        { flex: "1 1 auto", maxWidth: 600, marginRight: 0 }}>
           <h1 style={{
-            fontSize: "clamp(40px, 4.2vw, 60px)",
+            fontSize: "clamp(56px, 5.8vw, 80px)",
             fontWeight: 800,
             color: "#ffffff",
-            lineHeight: 1.1,
-            margin: "0 0 20px 0",
-            letterSpacing: "-0.02em",
+            lineHeight: 1.05,
+            margin: "0 0 24px 0",
+            letterSpacing: "-0.03em",
           }}>
             Try ReceiptSync<br />
             free for 14 days
           </h1>
           <p style={{
-            fontSize: 17,
-            color: "rgba(255,255,255,0.65)",
+                  fontSize: 18,
+            color: "rgba(255,255,255,0.7)",
             lineHeight: 1.6,
             margin: 0,
             maxWidth: 360,
