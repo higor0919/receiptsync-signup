@@ -202,12 +202,12 @@ export default function SignupPage() {
       <div style={{
         width: "100%", maxWidth: 1280, margin: "0 auto",
         padding: "0 80px",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        gap: 48, position: "relative", zIndex: 2,
+        display: "flex", alignItems: "center", justifyContent: "flex-end",
+        gap: 64, position: "relative", zIndex: 2,
       }}>
 
         {/* ── LEFT: Text on dark background (no box, no card) ── */}
-        <div style={        { flex: "1 1 0", maxWidth: 520 }}>
+        <div style={        { flex: "1 1 auto", maxWidth: 520, marginRight: 0 }}>
           <h1 style={{
             fontSize: "clamp(40px, 4.2vw, 60px)",
             fontWeight: 800,
@@ -255,7 +255,7 @@ export default function SignupPage() {
         </div>
 
         {/* ── RIGHT: Floating white card ── */}
-        <div style={        { flex: "0 0 460px", width: 460, position: "relative" }}>
+        <div style={        { flex: "0 0 460px", width: 460, position: "relative", flexShrink: 0 }}>
 
           {/* Spark SVG top-right of card (YNAB's spark-corner2) */}
           <svg
@@ -282,17 +282,17 @@ export default function SignupPage() {
                   background: "white",
                   borderRadius: 16,
                   boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
-                  padding: "40px 36px",
+                  padding: "52px 44px",
                 }}
               >
                 <h2 style={{ fontSize: 26, fontWeight: 700, color: "#1e1b4b", margin: "0 0 6px 0", textAlign: "center" }}>
                   Start your free trial today
                 </h2>
-                <p style={{ fontSize: 14, color: "#6b7280", margin: "0 0 28px 0", textAlign: "center" }}>
+                <p style={{ fontSize: 14, color: "#6b7280", margin: "0 0 32px 0", textAlign: "center" }}>
                   No credit card required!
                 </p>
 
-                <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                   {/* Email field */}
                   <div style={{ position: "relative" }}>
                     <span style={{
