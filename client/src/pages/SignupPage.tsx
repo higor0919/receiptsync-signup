@@ -203,7 +203,7 @@ export default function SignupPage() {
         width: "100%", maxWidth: 1280, margin: "0 auto",
         padding: "0 80px",
         display: "flex", alignItems: "center", justifyContent: "flex-end",
-        gap: 64, position: "relative", zIndex: 2,
+        gap: 40, position: "relative", zIndex: 2,
       }}>
 
         {/* ── LEFT: Text on dark background (no box, no card) ── */}
@@ -282,7 +282,7 @@ export default function SignupPage() {
                   background: "white",
                   borderRadius: 16,
                   boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
-                  padding: "52px 44px",
+                  padding: "56px 44px",
                 }}
               >
                 <h2 style={{ fontSize: 26, fontWeight: 700, color: "#1e1b4b", margin: "0 0 6px 0", textAlign: "center" }}>
@@ -434,6 +434,26 @@ export default function SignupPage() {
 
                 {/* Social buttons */}
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {/* Apple */}
+                  <a
+                    href="https://app.receiptsync.net/auth/apple"
+                    style={{
+                      display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
+                      padding: "12px", borderRadius: 8,
+                      border: "1.5px solid #e5e7eb",
+                      color: "#111827", fontWeight: 600, fontSize: 14,
+                      textDecoration: "none", background: "white",
+                      transition: "border-color 0.15s, box-shadow 0.15s",
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#6d28d9"; e.currentTarget.style.boxShadow = "0 0 0 3px rgba(109,40,217,0.08)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#e5e7eb"; e.currentTarget.style.boxShadow = "none"; }}
+                  >
+                    <svg width="16" height="19" viewBox="0 0 16 19" fill="#111827">
+                      <path d="M13.173 10.012c-.02-2.04 1.663-3.02 1.738-3.07-0.947-1.384-2.42-1.573-2.944-1.594-1.252-.127-2.45.739-3.084.739-.634 0-1.61-.723-2.65-.703-1.36.02-2.617.793-3.318 2.013-1.42 2.457-.363 6.093 1.018 8.087.676.974 1.478 2.065 2.532 2.025 1.018-.04 1.4-.654 2.63-.654 1.23 0 1.574.654 2.651.633 1.096-.02 1.787-.988 2.455-1.965.775-1.125 1.094-2.215 1.113-2.271-.024-.01-2.135-.818-2.14-3.24zM11.07 3.48C11.624 2.81 12 1.883 11.9.94c-.81.033-1.79.54-2.367 1.21-.52.6-.975 1.56-.852 2.48.9.07 1.82-.455 2.39-1.15z"/>
+                    </svg>
+                    Continue with Apple
+                  </a>
+                  {/* Google */}
                   <a
                     href="https://app.receiptsync.net/auth/google"
                     style={{
