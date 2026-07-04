@@ -200,16 +200,16 @@ export default function SignupPage() {
 
       {/* ── Page layout: left text + right card ── */}
       <div style={{
-        width: "100%",
-        padding: "0 60px",
-        display: "flex", alignItems: "center", justifyContent: "center",
-        gap: 56, position: "relative", zIndex: 2,
+        width: "100%", maxWidth: 1280, margin: "0 auto",
+        padding: "0 80px",
+        display: "flex", alignItems: "center", justifyContent: "space-between",
+        gap: 48, position: "relative", zIndex: 2,
       }}>
 
         {/* ── LEFT: Text on dark background (no box, no card) ── */}
-        <div style={        { flex: "0 0 auto", width: 400 }}>
+        <div style={        { flex: "1 1 0", maxWidth: 520 }}>
           <h1 style={{
-            fontSize: "clamp(34px, 3.8vw, 52px)",
+            fontSize: "clamp(40px, 4.2vw, 60px)",
             fontWeight: 800,
             color: "#ffffff",
             lineHeight: 1.1,
@@ -255,7 +255,7 @@ export default function SignupPage() {
         </div>
 
         {/* ── RIGHT: Floating white card ── */}
-        <div style={        { flex: "0 0 420px", width: 420, position: "relative" }}>
+        <div style={        { flex: "0 0 460px", width: 460, position: "relative" }}>
 
           {/* Spark SVG top-right of card (YNAB's spark-corner2) */}
           <svg
