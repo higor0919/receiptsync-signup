@@ -210,11 +210,11 @@ export default function SignupPage() {
         <div style={        { flex: "1 1 auto", maxWidth: 600, marginRight: 0 }}>
           <h1 style={{
             fontSize: "clamp(56px, 5.8vw, 80px)",
-            fontWeight: 800,
+            fontWeight: 700,
             color: "#ffffff",
             lineHeight: 1.05,
-            margin: "0 0 24px 0",
-            letterSpacing: "-0.03em",
+            margin: "0 0 36px 0",
+            letterSpacing: "-0.02em",
           }}>
             Try ReceiptSync<br />
             free for 14 days
@@ -222,9 +222,9 @@ export default function SignupPage() {
           <p style={{
                   fontSize: 18,
             color: "rgba(255,255,255,0.7)",
-            lineHeight: 1.6,
+            lineHeight: 1.65,
             margin: 0,
-            maxWidth: 360,
+            maxWidth: 420,
           }}>
             The average ReceiptSync user saves $600 in their first month (and you seem above average, honestly).
           </p>
